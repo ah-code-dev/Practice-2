@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-flow: dense; /* This means photos will sit in the emply space by themselves */
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This means photos will cover their original resolution or size */
+}
+
+.horizontal {
+  grid-column: auto / span 2; /* This means photos will expand 2 times by column. */
+}
+
+.vertical {
+  grid-row: auto / span 2;
+}
+
+.big {
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+}
